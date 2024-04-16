@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Document</title>
+    <!-- Link icon -->
+    <link rel="icon" href="../img/video-camera.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/stylectsp.css">
+</head>
+<body>
+    <div class="warrper">
+        <!-- Begin header -->
+        <header id="header">
+            <div class="header-top">
+                <div class="header-container">
+                    <a href="../html/trangchu.html">
+                        <div class="logo">
+                            <img src="../img/logo.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-menu' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p>Danh mục</p>
+                        </div>
+                    </a>
+                    <a href="#" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-location-plus' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p>Vị trị <br>
+                                <span>Hồ chí minh</span>
+                            </p>
+                        </div>
+                    </a>
+                    <form class="header-search">
+                        <input type="search" id="txtSearch" placeholder="Tìm kiếm...">
+                        <button type="submit" id="btnSearch">
+                            <i class='bx bx-search'></i>
+                        </button>
+                    </form> 
+                    <a href="../html/giohang.html" class="header-item">
+                        <div class="box-icon" style="position: relative;">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span id="quality" style="color: #fff;position: absolute;top: 8px;font-size: 10px;">0</span>
+                        </div>
+                        <div class="box-content">
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </a>
+                    <a href="../html/lienhe.html" class="header-item">
+                        <div class="box-icon">
+                            <i class='bx bx-phone-call' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p style="font-size: 14px;">Đặt hàng gọi ngay <br><span>19008888</span></p> 
+                        </div>
+                    </a>
+                    <a href="../html/dangnhap.html" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-user' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p id="account">Tài khoản</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Begin nav-->
+            <div class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="../html/trangchu.html">
+                            <i class='bx bx-home-alt'></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/sanpham.html">
+                            <i class='bx bx-camera-movie' ></i>
+                            <span>Máy Quay Phim</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="../html/sony.html">Máy Quay Phim Sony</a></li>
+                            <li><a href="../html/Panasonic.html">Máy Quay Phim Panasonic</a></li>
+                            <li><a href="../html/Canon.html">Máy Quay Phim Canon</a></li>
+                            <li><a href="../html/Gopro.html">Máy Quay Phim Gopro</a></li>
+                            <li><a href="../html/Insta360.html">Máy Quay Phim Insta360</a></li>
+                            <li><a href="../html/JVC.html">Máy Quay Phim JVC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/giothieu.html">
+                            <i class='bx bx-spreadsheet' ></i>
+                            <span>Giới thiệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/lienhe.html">
+                            <i class='bx bx-map-alt' ></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/sitemap.html">
+                            <i class='bx bx-sitemap'></i>
+                            <span>Site map</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/taikhoan.html">
+                            <i class='bx bx-user' ></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+            <!-- End nav -->
+        </header>
+        <!-- End header -->
+        <div class="clear"></div>
+        <!-- Begin product nav-->
+        <div class="product-nav">
+            <nav class="cps-container">
+                <ul>
+                    <li>
+                        <a href="../html/trangchu.html">
+                            <i class='bx bx-home-alt' ></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="../html/sanpham.html">
+                            <span>Máy Quay Phim</span>
+                        </a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="#" id="txtLink">
+                            <span id="txtTitle"></span>
+                        </a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="#">
+                            <span id="txtHeader"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End product nav-->
+
+        <!-- Begin box-product -->
+        <div class="container-fluid d-flex justify-content-center">
+            <div id="b" class="box-product">
+                <div class="product-title d-flex p-2 mb-2">
+                    <h6 class="title"></h6>
+                    <div class="box-rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <span id="danhGia">2 </span>đánh giá
+                    </div>
+                    <a href="#" class="btnSoSanh">+ So sánh</a>
+                </div>
+
+                <div class="product-content">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <div class="w-50" style="padding: 10px 0 0 10px;min-height: 350px;">
+                                    <div class="box-product-content">
+                                        <div class="proImg" style="padding: 10px;width: 315px;height: 315px;">
+                                            <a href="#">
+                                                <img src="../img/SanPham/Canon/canon-20fsh.jpg" alt="" id="imgMain">
+                                            </a>
+                                        </div>
+                                        <div class="proList">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-50" style="padding: 10px 0 0 20px;">
+                                    <div class="product-recap">
+                                        <h6 style="font-size: 24px;">Tính năng nổi bật</h6>
+                                        <ul style="border-top: 1px solid #ccc;font-size: 15px;padding: 10px 0 0 10px;">
+                                            <li class="mb-2">Hoạt động trong môi trường cực thiếu sáng với ISO 4 triệu</li>
+                                            <li class="mb-2">Quay phim chất lượng cao Full HD 1080p/1080i/720p</li>
+                                            <li class="mb-2">Điều khiển linh hoạt với các chế độ tự động và tùy chỉnh</li>
+                                            <li class="mb-2">Tương thích với dòng ống kính EF phong phú</li>
+                                            <li class="mb-2">Chế độ điều khiển từ xa và filter ND/IR tích hợp</li>
+                                            <li class="mb-2">Nhỏ và nhẹ, đa dụng</li>
+                                        </ul>
+                                    </div>
+        
+                                    <div class="product-buy pt-2" style="border-top: 1px solid #ccc;">
+                                        <table id="table-product">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-lable">Mã sản phẩm</td>
+                                                    <td>A02070067</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-lable">Số lượng</td>
+                                                    <td>6 sản phẩm</td>
+                                                </tr>
+                                                
+                                            </tbody>
+                                        </table>
+                                        <div class="box-btn d-flex justify-content-between my-2">
+                                            <a href="../html/giohang.html">
+                                                <button type="button" class="btnBuy">
+                                                    <strong>Mua hàng</strong>
+                                                    <span style="font-size: 14px;">Giao hàng nhanh trong 2 giờ</span>
+                                                </button>
+                                            </a>
+                                            <button type="button" class="btnCart">
+                                                <i class='bx bx-cart-alt' ></i>
+                                                <span>Thêm vào giỏ hàng</span>
+                                            </button>
+                                        </div>
+                                    </div>
+        
+                                    
+                                </div>
+                                <div class="infor-detail mt-2">
+                                    <h1>Chi tiết sản phẩm</h1>
+                                    <div class="txt-detail">
+                                        <p>GoPro Hero 12 Black chiếc action camera mới nhất của GoPro, có vẻ ngoại hình của chiếc máy này sẽ có không có nhiều thay đổi so với GoPro Hero 11 nhưng với cảm biến 1/1.9 inch, độ phân giải ảnh 27MP, quay video 5.3K/60 fps, quay slow-motion 4K/120 fps, Hypersmooth 6.0,… Đây hứa hẹn sẽ là chiếc action camera mạnh mẽ nhất trong giới.</p>
+                                        <h6>Giới thiệu GoPro 12 Hero Black</h6>
+                                        <h5>GoPro Hero 12 Black có thể quay video 5,3K/60fps sắc nét</h5>
+                                        <p>GoPro Hero 12 Black sở hữu khả năng quay video ở độ phân giải 5,3K với tốc độ 60 khung hình/giây, đem đến trải nghiệm ghi hình vô cùng chất lượng. Bên cạnh đó GoPro 12 cũng có thể quay video ở độ phân giải 4K, 2,7K và 1080p.</p>
+                                        <h5>Quay video slow-motion 4K/120fps</h5>
+                                        <p>GoPro 12 có khả năng quay video slow-motion chậm gấp 4 lần – khoảng 120 khung hình/giây ở độ phân giải 4K. Bạn cũng có thể có thể tăng tốc độ chuyển động chậm lên 8x – 240 khung hình/giây ở độ phân giải 2,7KGoPro 12 có thể quay video slow-motion 4K/120fps</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <div class="infor-tel">
+                                    <div class="free">
+                                        <p> Miễn phí giao hàng toàn quốc</p>
+                                    </div>
+        
+                                    <div class="telephone mt-3">
+                                        <h6 class="textTel">Nhấn số để gọi ngay</h6>
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="table-lable">Hồ Chí Minh</td>
+                                                    <td><a href="#">0123456789</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="table-lable">Hà Nội</td>
+                                                    <td><a href="#">0123456789</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="box-more-promotion my-4">
+                                    <div class="box-more-promotion-title">Ưu đãi thêm</div>
+                                    <div class="render-promotion">
+                                        <ul>
+                                            <li class="item-promotion"><a href="#">Giảm 1 triệu khi thanh toán bằng thẻ tín dụng V</a></li>
+                                            <li class="item-promotion"><a href="#">Giảm đến 500K khi thanh toán qua VNPAY-QR</a></li>
+                                            <li class="item-promotion"><a href="#">Nhận e-voucher đến 2.5 triệu khi mở thẻ tín dụng HSBC</a></li>
+                                            <li class="item-promotion"><a href="#">Nhập mã CPSMM giảm 2% - Tối đa 200.000 đồng</a></li>
+                                            <li class="item-promotion"><a href="#">Giảm thêm 5% tối đa 200.000đ khi thanh toán qua Krediv</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End box-product -->
+
+        <!-- Begin box-same-continer -->
+        <div class="box-same-container d-flex justify-content-center">
+            <div class="box-same">
+                <div class="same-product-list">
+                    <div class="product-options-tabs">
+                        <div class="item">THU CŨ ĐỔI MỚI GIÁ TỐT</div>
+                        <div class="item">SẢN PHẨM TƯƠNG TỰ</div>
+                        <div class="item">THAM KHẢO THÊM HÀNG CŨ</div>
+                    </div>
+                </div>
+                <div class="filter-products mt-3">
+                    <div class="row mb-4">
+                        <div class="col-3">
+                            <div class="product" id="4">
+                                <a href="../html/chiTietSanPham.html">    
+                                    <div class="product-top">
+                                        <div class="img">
+                                            <img src="../img/SanPham/Sony/may-quay-sony-fdrx3000r(1).jpg" alt="">
+                                        </div>
+                                        <h4 class="name my-2">Máy Quay Sony Action Cam FDR-X3000R (Quay 4K)</h4>
+                                    </div>
+                                    <div class="product-body mt-2 mb-3">
+                                        <div class="price">
+                                            <span class="price-dis">12,990,000₫</span>
+                                            <span class="price-cr">14,990,000₫</span>
+                                        </div>
+                                        <div class="pay-price">
+                                            Giảm thêm Smember đến&nbsp;<span>93.000đ</span>
+                                        </div>
+                                        <div class="infor">
+                                            <p>
+                                                Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="prodcut-discount">
+                                        <p class="discount-detail">Giảm 13%</p>
+                                    </div>
+                                    <div class="install-0-tag">
+                                        Trả góp 0%
+                                    </div>
+                                </a>
+                                <div class="product-bottom d-flex align-items-center justify-content-between">
+                                    <div class="hating">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <button type="button" class="float-right btn btn-outline-dark">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="product" id="5">
+                                <a href="../html/chiTietSanPham.html">
+                                    <div class="product-top">
+                                        <div class="img">
+                                            <img src="../img/SanPham/Sony/may-quay-sony-pxw-z280.jpg" alt="">
+                                        </div>
+                                        <h4 class="name my-2">Máy quay chuyên dụng Sony PXW-Z280 (Pal/ NTSC)</h4>
+                                    </div>
+                                    <div class="product-body mt-2 mb-3">
+                                        <div class="price">
+                                            <span class="price-dis">230,000,000₫</span>
+                                        </div>
+                                        <div class="pay-price">
+                                            Giảm thêm Smember đến&nbsp;<span>93.000đ</span>
+                                        </div>
+                                        <div class="infor">
+                                            <p>
+                                                Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="install-0-tag">
+                                        Trả góp 0%
+                                    </div>
+                                </a>
+                                <div class="product-bottom d-flex align-items-center justify-content-between">
+                                    <div class="hating">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <button type="button" class="float-right btn btn-outline-dark">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="product" id="6">
+                                <a href="../html/chiTietSanPham.html">
+                                    <div class="product-top">
+                                        <div class="img">
+                                            <img src="../img/SanPham/Sony/may-quay-sony-pxwfx9-chinh-hang.jpg" alt="">
+                                        </div>
+                                        <h4 class="name my-2">Máy quay Sony PXW-FX9 chính hãng</h4>
+                                    </div>
+                                    <div class="product-body mt-2 mb-3">
+                                        <div class="price">
+                                            <span class="price-dis">295,000,000₫</span>
+                                        </div>
+                                        <div class="pay-price">
+                                            Giảm thêm Smember đến&nbsp;<span>93.000đ</span>
+                                        </div>
+                                        <div class="infor">
+                                            <p>
+                                                Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="install-0-tag">
+                                        Trả góp 0%
+                                    </div>
+                                </a>
+                                <div class="product-bottom d-flex align-items-center justify-content-between">
+                                    <div class="hating">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <button type="button" class="float-right btn btn-outline-dark">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="product" id="7">
+                                <a href="../html/chiTietSanPham.html">
+                                    <div class="product-top">
+                                        <div class="img">
+                                            <img src="../img/SanPham/Sony/may-quay-sony-xdcam-pxwz90.jpg" alt="">
+                                        </div>
+                                        <h4 class="name my-2">Máy quay chuyên dụng Sony PXW-Z90V (Pal/ NTSC)</h4>
+                                    </div>
+                                    <div class="product-body mt-2 mb-3">
+                                        <div class="price">
+                                            <span class="price-dis">68,990,000₫</span>
+                                            <span class="price-cr">73,900,000₫</span>
+                                        </div>
+                                        <div class="pay-price">
+                                            Giảm thêm Smember đến&nbsp;<span>93.000đ</span>
+                                        </div>
+                                        <div class="infor">
+                                            <p>
+                                                Không phí chuyển đổi khi trả góp 0% qua thẻ tín dụng kỳ hạn 3-6 tháng
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="prodcut-discount">
+                                        <p class="discount-detail">Giảm 7%</p>
+                                    </div>
+                                    <div class="install-0-tag">
+                                        Trả góp 0%
+                                    </div>
+                                </a>
+                                <div class="product-bottom d-flex align-items-center justify-content-between">
+                                    <div class="hating">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                    </div>
+                                    <button type="button" class="float-right btn btn-outline-dark">Mua ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-content-bottom ">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-6 pr-4">
+                            <div class="question">
+                                <p class="text-center text-uppercase text-danger my-2" style="font-size: 24px;font-weight: 600;">Câu hỏi thường gặp</p>
+                                <div class="table-list">
+                                    <div class="mb-1">
+                                        <button class="button-content">
+                                            <p>Vì sao nên tham gia thu cũ đỏi mới</p>
+                                            <div class="icon">
+                                                <i class='bx bx-right-arrow-alt'></i>
+                                            </div>
+                                        </button>
+                                        <div class="wrapper">
+                                            <div class="content-wrapper">
+                                                <div>
+                                                    Khách hàng nên tham gia thu cũ đổi mới vì có ưu đãi trợ giá đến 40%
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button class="button-content">
+                                            <p>Chính sách bảo hành khi mua tại cửa hàng như thế nào ?</p>
+                                            <div class="icon">
+                                                <i class='bx bx-right-arrow-alt'></i>
+                                            </div>
+                                        </button>
+                                        <div class="wrapper">
+                                            <div class="content-wrapper">
+                                                <div>
+                                                    <p>
+                                                        Tuỳ vào từng sản phẩm, thời gian bảo hành sẽ có sự thay đổi khác nhau. Cụ thể: <br>
+                                                        - Thời gian bảo hành lên đến 12 tháng kể từ ngày mua hàng <br>
+                                                        - Bảo hành tại các trung tâm bảo hành chính hãng <br>
+                                                        - 1 đổi 1 trong vòng 30 ngày nếu xuất hiện lỗi phần cứng từ nhà sản xuất
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-1">
+                                        <button class="button-content">
+                                            <p>Cửa hàng có chính sách ưu đãi cho thành viên không ?</p>
+                                            <div class="icon">
+                                                <i class='bx bx-right-arrow-alt'></i>
+                                            </div>
+                                        </button>
+                                        <div class="wrapper">
+                                            <div class="content-wrapper">
+                                                <div>
+                                                    <p>
+                                                        CellphoneS có chính sách ưu đãi hấp dẫn dành cho khách hàng thành viên nhằm mang đến những trải nghiệm tốt nhất. Sẽ có 3 cấp độ tài khoản tương ứng với ưu đãi khác nhau: <br>
+                                                        - S- New: Giảm thêm 5% (tối đa 200.000VND) khi tham gia thu cũ lên đời, tặng voucher sinh nhật trị giá đến 50.000VND <br>
+                                                        - S-MEM: Giảm thêm 0.5% khi mua sản phẩm điện thoại, giảm thêm 5% (tối đa 300.000VND) khi tham gia thu cũ lên đời, nhận voucher sinh nhật lên đến 200.000VND <br>
+                                                        - S-Vip: Giảm thêm 1% khi mua điện thoại, giảm thêm 5% (tối đa 300.000VND) khi thu cũ lên đời, tặng voucer sinh nhật lên đến 500.000VND
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6" style="width: 600px;">
+                            <div class="infor">
+                                <div class="infor-title">
+                                    <i class='bx bx-news' ></i>
+                                    Thông tin sản phẩm
+                                </div>
+                                <div class="infor-content">
+                                    <a href="#" class="blank d-flex my-3">
+                                        <div class="img p-2">
+                                            <img src="../img/SanPham/Canon/canon-20fsh.jpg" alt="">
+                                        </div>
+                                        <div class="blank-item">
+                                            Máy quay chuyên dụng Canon 20F-SH giá tư 5.8 triệu đồng
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blank d-flex mb-3">
+                                        <div class="img p-2">
+                                            <img src="../img/SanPham/Canon/canon-xa-15.jpg" alt="">
+                                        </div>
+                                        <div class="blank-item">
+                                            Máy quay chuyên dụng Canon XA15, pin 5500 mAh, giá tư 10 triệu đồng
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blank d-flex mb-3">
+                                        <div class="img p-2">
+                                            <img src="../img/SanPham/Panasonic/may-quay-panasonic-ag-as9000-jpg.jpg" alt="">
+                                        </div>
+                                        <div class="blank-item">
+                                            Máy quay chuyên dụng Panasonic AG-AS9000EN giá tư 27 triệu đồng
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blank d-flex mb-3">
+                                        <div class="img p-2">
+                                            <img src="../img/SanPham/JVC/jvc-gyhm620.jpg" alt="">
+                                        </div>
+                                        <div class="blank-item">
+                                            Máy Quay JVC GY-HM660 giá tư 18.999 triệu đồng
+                                        </div>
+                                    </a>
+                                    <a href="#" class="blank d-flex mb-3">
+                                        <div class="img p-2">
+                                            <img src="../img/SanPham/Insta360/may-quay-insta360-one.jpg" alt="">
+                                        </div>
+                                        <div class="blank-item">
+                                            Máy Quay JVC GY-LS300CHE giá tư 46.990 triệu đồng
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End box-same -->
+
+        <!-- Begin footer -->
+        <footer>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="mb-1">Liên hệ để được hệ trợ miễn phí</p>
+                        <ul class="thongTin">
+                            <li>Gọi mua hàng <a href="#">1800.2097</a></li>
+                            <li>Gọi khiếu nại <a href="#">1800.2063</a></li>
+                            <li>Gọi bảo hành <a href="#">1800.2064</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <p class="mb-1">Đăng kí để được nhận khuyễn mãi</p>
+                        <form>
+                            <input type="email" placeholder="Email" class="mb-3">
+                            <input type="tel" placeholder="Số điện thoại" class="mb-3">
+                            <br>
+                            <input type="checkbox" class="mb-3">
+                            <label for="">Tôi đồng ý với điều khoản của cửa hàng</label>
+                            <button type="button">Đăng kí ngay</button>
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <p class="mb-1">Các thông tin khác</p>
+                        <ul class="thongTin">
+                            <li><a href="#">Ưu đãi thành viên</a></li>
+                            <li><a href="#">Ưu đãi sinh viên</a></li>
+                            <li><a href="#">Dịch vụ bảo hành</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="mb-1">Thông tin và chính sách</p>
+                        <ul class="thongTin">
+                            <li><a href="#">Mua hàng và thanh toán Online</a></li>
+                            <li><a href="#">Mua hàng trả góp Online</a></li>
+                            <li><a href="#">Mua hàng trả góp bằng thẻ tín dụng</a></li>
+                            <li><a href="#">Trung tâm bảo hành chính hãng</a></li>
+                            <li><a href="#">Quy định về việc sao lưu dữ liệu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-center align-content-center">
+                <span>Kết nối với tôi qua</span>
+                <a href="#" class="mx-1"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-youtube' ></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- js -->
+    <script src="../js/productdetail.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/searchvalue.js"></script>
+    <script src="../js/addtocart.js"></script>
+</body>
+</html>

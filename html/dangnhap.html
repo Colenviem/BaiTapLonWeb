@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="icon" href="../img/video-camera.png" type="image/x-icon"/>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/stylelogin.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Tạo tài khoản</h1>
+                <input type="text" id="txtName" placeholder="Tên">
+                <span id="erName"></span>
+                <input type="email" id="txtEmail" placeholder="Email">
+                <span id="erEmail"></span>
+                <input type="password" id="txtPass" placeholder="Mật khẩu">
+                <span id="erPass"></span>
+                <input type="password" id="txtPassLoginReg" placeholder="Nhập lại mật khẩu">
+                <span id="erPassLoginReg"></span>
+                <button id="btnDangKy" type="button">Đăng ký</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Đăng nhập</h1>
+                <input type="email" id="txtEmailLogin" placeholder="Email">
+                <span id="erEmailLogin"></span>
+                <input type="password" id="txtPassLogin" placeholder="Mật khẩu">
+                <span id="erPassLogin"></span>
+                <a href="#">Quên mật khẩu của bạn?</a>
+                <button id="btnDangNhap" type="button"><a href="#" id="link">Đăng nhập</a></button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Nhập thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                    <button class="hidden" id="login">Đăng nhập</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Đăng ký với thông tin cá nhân của bạn để sử dụng tất cả các tính năng của trang web</p>
+                    <button class="hidden" id="register">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/data.js"></script>
+    <script src="../js/signupsignin.js"></script>
+</body>
+</html>

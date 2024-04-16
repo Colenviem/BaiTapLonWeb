@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết thanh toán</title>
+    <!-- Link icon -->
+    <link rel="icon" href="../img/video-camera.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/styletaikhoan.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Begin header -->
+        <header id="header">
+            <div class="header-top">
+                <div class="header-container">
+                    <a href="../html/trangchu.html">
+                        <div class="logo">
+                            <img src="../img/logo.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-menu' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p>Danh mục</p>
+                        </div>
+                    </a>
+                    <a href="#" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-location-plus' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p>Vị trị <br>
+                                <span>Hồ chí minh</span>
+                            </p>
+                        </div>
+                    </a>
+                    <form class="header-search">
+                        <input type="search" id="txtSearch" placeholder="Tìm kiếm...">
+                        <button type="submit" id="btnSearch">
+                            <i class='bx bx-search'></i>
+                        </button>
+                    </form> 
+                    <a href="../html/giohang.html" class="header-item">
+                        <div class="box-icon" style="position: relative;">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span id="quality" style="color: #fff;position: absolute;top: 8px;font-size: 10px;">0</span>
+                        </div>
+                        <div class="box-content">
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </a>
+                    <a href="../html/lienhe.html" class="header-item">
+                        <div class="box-icon">
+                            <i class='bx bx-phone-call' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p style="font-size: 14px;">Đặt hàng gọi ngay <br><span>19008888</span></p> 
+                        </div>
+                    </a>
+                    <a href="../html/dangnhap.html" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-user' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p id="account">Tài khoản</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Begin nav-->
+            <div class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="../html/trangchu.html">
+                            <i class='bx bx-home-alt'></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/sanpham.html">
+                            <i class='bx bx-camera-movie' ></i>
+                            <span>Máy Quay Phim</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="../html/sony.html">Máy Quay Phim Sony</a></li>
+                            <li><a href="../html/Panasonic.html">Máy Quay Phim Panasonic</a></li>
+                            <li><a href="../html/Canon.html">Máy Quay Phim Canon</a></li>
+                            <li><a href="../html/Gopro.html">Máy Quay Phim Gopro</a></li>
+                            <li><a href="../html/Insta360.html">Máy Quay Phim Insta360</a></li>
+                            <li><a href="../html/JVC.html">Máy Quay Phim JVC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/giothieu.html">
+                            <i class='bx bx-spreadsheet' ></i>
+                            <span>Giới thiệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/lienhe.html">
+                            <i class='bx bx-map-alt' ></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/sitemap.html">
+                            <i class='bx bx-sitemap'></i>
+                            <span>Site map</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/taikhoan.html">
+                            <i class='bx bx-user' ></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+            <!-- End nav -->
+        </header>
+        <!-- End header -->
+        <!-- Begin product nav-->
+        <div class="product-nav">
+            <nav class="cps-container">
+                <ul>
+                    <li>
+                        <a href="../html/trangchu.html">
+                            <i class='bx bx-home-alt' ></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="../html/giohang.html">
+                            <span>Giỏ hàng</span>
+                        </a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="../html/thutucthanhtoan.html">
+                            <span>Thủ tục thanh toán</span>
+                        </a>
+                    </li>
+                    <li>></li>
+                    <li>
+                        <a href="#">
+                            <span>Chi tiết đơn hàng</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- End product nav-->
+        <div class="clear"></div>
+
+        <section class="page-main mb-2 py-2 d-flex justify-content-center">
+            <div class="container">
+                <div class="box-content" style="width: 1200px;">
+                    <div class="box-content" style="height: auto;">
+                        <h1 class="text-center mb-3 font-weight-bold text-monospace">
+                            Hoàn thành</h1>
+                        <div class="row  d-flex align-items-center">
+                            <div class="col-lg-12 ">
+                                <h3 class="text-center font-weight-bold">Đơn hàng của bạn đang được xử lý</h3>
+                                <p class="text-center text-dark ">Chúng tôi sẽ gửi cho bạn thông tin cập nhật về đơn hàng</p>
+        
+                            </div>
+                        </div>
+        
+                        <div class="order-detail py-2">
+                            <p class="mb-2" style="font-size: 18px;">Chi tiết sản phẩm</p>
+                            <div class="border px-2 py-2" style="border-radius: 10px;">
+                                <div class="row px-2 py-2" style="border-bottom: 1px solid #ccc">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">ID</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="ID">22700831</p>
+                                    </div>
+                                    <div class="border-bottom"></div>
+                                </div>
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Số lượng</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="quantityOrdered"></p>
+                                    </div>
+                                </div>
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Giá</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="PriceSC"></p>
+                                    </div>
+                                </div>
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Phương thức thanh toán</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="Paymentmethods"></p>
+                                    </div>
+                                    <div class="border-bottom"></div>
+                                </div>
+        
+                                <div class="row px-2 pt-2" style="border-top: 1px solid #ccc;">
+                                    <div class="col-lg-4 pb-2">
+                                        <h4 class="float-lg-left">Tổng tiền</h4>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left text-danger" id="totalPrice"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-content mt-4" style="height: auto;">
+                        <div class="customerInfor">
+                            <p class="mb-2" style="font-size: 18px;">Thông tin khách hàng</p>
+                            <div class="border px-2 py-2" style="border-radius: 10px;">
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Họ tên</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="customerNameSC"></p>
+                                    </div>
+                                </div>
+        
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Giới tính</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="sexSC"></p>
+                                    </div>
+                                </div>
+        
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Địa chỉ</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="AddressSC"></p>
+                                    </div>
+                                </div>
+        
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Số điện thoại</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="phoneSC"></p>
+                                    </div>
+                                </div>
+        
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Email</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="emailCustomerSC"></p>
+                                    </div>
+                                </div>
+        
+                                <div class="row px-2 py-2">
+                                    <div class="col-lg-4 pb-2">
+                                        <p class="float-lg-left">Thẻ căn cước công dân</p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="float-lg-left" id="cmndSC"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="confirm mt-2 text-center">
+                        <div class="btn">
+                            <a href="../html/giohang.html" class="btn btn-outline-dark btn-lg ">Tiếp mục mua sắn</a>
+                        </div>
+                        <div class="btn ">
+                            <a href="../html/trangchu.html" class="btn btn-outline-primary btn-lg">Quay lại trang chủ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End block content -->
+        </section>
+        <!-- Begin footer -->
+        <footer>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-3">
+                        <p class="mb-1">Liên hệ để được hệ trợ miễn phí</p>
+                        <ul class="thongTin">
+                            <li>Gọi mua hàng <a href="#">1800.2097</a></li>
+                            <li>Gọi khiếu nại <a href="#">1800.2063</a></li>
+                            <li>Gọi bảo hành <a href="#">1800.2064</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <p class="mb-1">Đăng kí để được nhận khuyễn mãi</p>
+                        <form>
+                            <input type="email" placeholder="Email" class="mb-3">
+                            <input type="tel" placeholder="Số điện thoại" class="mb-3">
+                            <br>
+                            <input type="checkbox" class="mb-3">
+                            <label for="">Tôi đồng ý với điều khoản của cửa hàng</label>
+                            <button type="button">Đăng kí ngay</button>
+                        </form>
+                    </div>
+                    <div class="col-2">
+                        <p class="mb-1">Các thông tin khác</p>
+                        <ul class="thongTin">
+                            <li><a href="#">Ưu đãi thành viên</a></li>
+                            <li><a href="#">Ưu đãi sinh viên</a></li>
+                            <li><a href="#">Dịch vụ bảo hành</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <p class="mb-1">Thông tin và chính sách</p>
+                        <ul class="thongTin">
+                            <li><a href="#">Mua hàng và thanh toán Online</a></li>
+                            <li><a href="#">Mua hàng trả góp Online</a></li>
+                            <li><a href="#">Mua hàng trả góp bằng thẻ tín dụng</a></li>
+                            <li><a href="#">Trung tâm bảo hành chính hãng</a></li>
+                            <li><a href="#">Quy định về việc sao lưu dữ liệu</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex justify-content-center align-content-center">
+                <span>Kết nối với tôi qua</span>
+                <a href="#" class="mx-1"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-twitter'></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-youtube' ></i></a>
+                <a href="#" class="mx-1"><i class='bx bxl-tiktok' ></i></a>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/addtocart.js"></script>
+    <script src="../js/searchvalue.js"></script>
+    <script>
+        $(document).ready(function () {
+            var temps = JSON.parse(localStorage.getItem("temps")) || { quantity: 0, price: 0 };
+            var userInfo = JSON.parse(localStorage.getItem("userInfo")) || [];
+            $("#customerNameSC").html(userInfo.fullname);
+            $("#sexSC").html(userInfo.gioitinh);
+            $("#AddressSC").html(userInfo.diachi);
+            $("#phoneSC").html(userInfo.dienthoai);
+            $("#emailCustomerSC").html(userInfo.email);
+            $("#cmndSC").html(userInfo.cmnd);
+            $("#Paymentmethods").html(userInfo.selectedLabel);
+            $("#PriceSC").html(temps.price);
+            $("#quantityOrdered").html(temps.quantity);
+            $("#totalPrice").html(temps.price);
+        });
+    </script>
+</body>
+</html>

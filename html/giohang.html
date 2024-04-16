@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="icon" href="../img/video-camera.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/stylegiohang.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Begin header -->
+        <header id="header">
+            <div class="header-top">
+                <div class="header-container">
+                    <a href="../html/trangchu.html">
+                        <div class="logo">
+                            <img src="../img/logo.png" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-menu' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p>Danh mục</p>
+                        </div>
+                    </a>
+                    <a href="#" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-location-plus' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p>Vị trị <br>
+                                <span>Hồ chí minh</span>
+                            </p>
+                        </div>
+                    </a>
+                    <form class="header-search">
+                        <input type="search" id="txtSearch" placeholder="Tìm kiếm...">
+                        <button type="submit" id="btnSearch">
+                            <i class='bx bx-search'></i>
+                        </button>
+                    </form> 
+                    <a href="../html/giohang.html" class="header-item">
+                        <div class="box-icon" style="position: relative;">
+                            <i class='bx bx-shopping-bag'></i>
+                            <span id="quality" style="color: #fff;position: absolute;top: 8px;font-size: 10px;">0</span>
+                        </div>
+                        <div class="box-content">
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </a>
+                    <a href="../html/lienhe.html" class="header-item">
+                        <div class="box-icon">
+                            <i class='bx bx-phone-call' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p style="font-size: 14px;">Đặt hàng gọi ngay <br><span>19008888</span></p> 
+                        </div>
+                    </a>
+                    <a href="../html/dangnhap.html" class="header-item bg-hsla">
+                        <div class="box-icon">
+                            <i class='bx bx-user' ></i>
+                        </div>
+                        <div class="box-content">
+                            <p id="account">Tài khoản</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Begin nav-->
+            <div class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="../html/trangchu.html">
+                            <i class='bx bx-home-alt'></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/sanpham.html">
+                            <i class='bx bx-camera-movie' ></i>
+                            <span>Máy Quay Phim</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="../html/sony.html">Máy Quay Phim Sony</a></li>
+                            <li><a href="../html/Panasonic.html">Máy Quay Phim Panasonic</a></li>
+                            <li><a href="../html/Canon.html">Máy Quay Phim Canon</a></li>
+                            <li><a href="../html/Gopro.html">Máy Quay Phim Gopro</a></li>
+                            <li><a href="../html/Insta360.html">Máy Quay Phim Insta360</a></li>
+                            <li><a href="../html/JVC.html">Máy Quay Phim JVC</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../html/giothieu.html">
+                            <i class='bx bx-spreadsheet' ></i>
+                            <span>Giới thiệu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/lienhe.html">
+                            <i class='bx bx-map-alt' ></i>
+                            <span>Liên hệ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/sitemap.html">
+                            <i class='bx bx-sitemap'></i>
+                            <span>Site map</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../html/taikhoan.html">
+                            <i class='bx bx-user' ></i>
+                            <span>Tài khoản</span>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+            <!-- End nav -->
+        </header>
+        <!-- End header -->
+        <section class="d-flex justify-content-center">
+            <div class="cart">
+                <div class="cart-header">
+                    <i class='bx bx-left-arrow-alt'></i>
+                    <p class="title">Giỏ hàng của bạn</p>
+                </div>
+                <div class="container">
+                    <div id="listCart" style="padding-bottom: 70px;">
+                       
+                    </div>
+                </div>
+                <div class="container">
+                    <div id="stickyBottomBar">
+                        <div class="price-temp">
+                            <p>Tạm tính</p>
+                            <span class="money">0 đ</span>
+                        </div>
+                        <button class="btn-buy btn-disabled" id="btnBuy" disabled>Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="../js/cart.js"></script>
+    <script src="../js/searchvalue.js"></script>
+</body>
+</html>
